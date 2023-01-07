@@ -1,0 +1,33 @@
+## KEY INFORMATION TO NOTE ABOUT JS
+- JS is a high-level Object Oriented and dynamic programming language
+
+## Data types
+- Number ( in JS their is no float or int value just Numbers)
+- BigInt
+- Symbol 
+- undefined
+- Boolean
+- String
+- null
+
+## Variables
+- Let is Blocked scoped 
+- Var is function scoped 
+- Never write a variable without properly declaring it, because JS will create a property on the global object
+
+## Bug in JS
+- typeof null is a object instead of null
+
+## Operators and Operator Precedence
+** power e.g 2 ** 3 = 8
+- For Operator Precedence check mozilla developer netword [www.develope.mozilla.org]
+- It is a general rule in JS that a maths operations are done before the comparasion operators.
+
+## Template Literal to concantinate multiple datatypes easily
+- ${whatever type can be placed insided this braces}
+
+## Type conversion and Coercion
+- Type conversion is when we manually or explicitly convert one type to value to another. Note it is the type that is converted not the variable
+- Type coersion is when JS automatically helps to convert the type and it happens implicitly i.e. completely hidden from us. 
+
+
