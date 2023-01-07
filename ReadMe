@@ -28,6 +28,22 @@
 
 ## Type conversion and Coercion
 - Type conversion is when we manually or explicitly convert one type to value to another. Note it is the type that is converted not the variable
+let x = '18'
+let y = 'Timi
+NaN := Not a Number , it is a number but an invalid number
+e.g to convert a string to Number use Number(x) and to convert a number to string use String(y)
+
 - Type coersion is when JS automatically helps to convert the type and it happens implicitly i.e. completely hidden from us. 
+In type coersion the "+" operator converts the number to strings while the "-" and "/" operators converts the strings to numbers
+
+
+## falsy and truthy values
+- falsy values are values that become false when we try to convert them to a boolean [ 0, '', undefined, null, NaN ]
+Boolean(0) // false
+Boolean(NaN) //false
+- other values other than these are called truthy values e.g. 1 , 'Timi' 
+Boolean('Timi') //true
+Boolean({}) //true
+
 
 
