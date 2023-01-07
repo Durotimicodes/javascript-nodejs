@@ -47,3 +47,21 @@ Boolean({}) //true
 
 
 
+## Joining Switch Statements and making use of template literal
+const day = 'Tuesday'
+
+switch(day) {
+    case 'Monday': 
+    case 'Tuesday':
+    case 'Wednesday':
+    case 'Thursday':
+    console.log(`Today is ${day}`)
+    break
+
+    default:
+    console.log(`Todat is unknown`)
+}
+
+## Statments and Expressions
+- An Expression is a piece of code that produces a value
+- A Statement doesnot produce a value but performs some or a action e.g an If else and switch statement
