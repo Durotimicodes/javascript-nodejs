@@ -63,4 +63,39 @@ this year July
 
 while( randNumb != 6 ){
     console.log(`This is the random number ${randNumb}`)
+    randNumb++
 }
+
+//Advanced Javascript
+const first = () => {
+    const greet = 'Hi';
+    const second = () => {
+        
+    }
+    return second
+}
+
+const newFunc = first();
+newFunc();
+
+//Closures := a function ran ,the function executed. Its never going to exercute again,
+//but its going to remember that there are references to those variables so the child scope function always have access to the parent scope function
+
+//Currying
+//is a process of converting a function that takes multiple arguments into
+//a function that takes it one at a time.
+//why curry ? because it makes code extensible
+
+const multip = (a, b) => a * b ;
+const curriedMultiPly = (a) => (b) => a * b ;
+
+const multiplyBy5 = curriedMultiPly(5);
+multiplyBy5(5)
+
+//Compose:= this is act of putting two functions together to form a 3rd function
+//where the output of one function is the input of the other
+
+const compose = (f,g) => (a) => f(g(a));
+const sum = (num) => num +1 ;
+
+console.log(compose(sum, sum)(5))
