@@ -65,3 +65,6 @@ switch(day) {
 ## Statments and Expressions
 - An Expression is a piece of code that produces a value
 - A Statement doesnot produce a value but performs some or a action e.g an If else and switch statement
+
+## continue and break
+continue is exit the current iteration of the loop and move to the next, in other words skip while break completely terminates the iteration.
