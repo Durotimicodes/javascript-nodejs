@@ -74,3 +74,24 @@ Avoid side effects and encourage functional purity
 By Avoiding side effects : you do not write a function that reintializes a variable that is globally scoped.
 
 By encouraging functional purity : you make sure you return a value in a function so as to avoid an undefined result. Hence it becomes deterministic
+
+## ADVANCE JAVASCRIPT CONCEPTS : CLOSURE, CURRYING 
+Closures := a function ran ,the function executed. Its never going to exercute again,
+//but its going to remember that there are references to those variables so the child scope function always have access to the parent scope function
+
+Currying is a process of converting a function that takes multiple arguments into a function that takes it one at a time.
+why curry ? because it makes code extensible.
+
+
+## COMPOSE 
+Compose:= this is act of putting two functions together to form a 3rd function where the output of one function is the input of the other
+
+## map , filter and reduce 
+map :does the exact samething as forEach just that its better because map has a restriction you need to return a value
+
+reduce : you can filter and iterate with reduce
+
+## PASSED BY VALUE & PASSED BY REFERENCE 
+ primite types are immutable i.e one can not change them. In other to change them one has to remove the primitive type.
+
+ objects are passed by reference, and this is beneficial because we are saving space in memory.

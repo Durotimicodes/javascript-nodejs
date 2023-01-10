@@ -163,5 +163,13 @@ class Wizard extends Player {
     }
 }
 
-const wizard1 = new Wizard('Edmond', 'Scrum Master');
-const wizard2  = new Wizard('Tara', 'PhD student')
+const wizard1 = new Wizard('Edmond', 'Water Power');
+const wizard2  = new Wizard('Tara', 'Fire Power')
+
+//Passed by reference, how to clone an object without passing by reference
+const obj1 = {a : 'a', b: 'b', c: 'c'}
+const obj2 =  Object.assign({d:'d'}, obj1) //Object.assign or use the spread operator
+const obj3 = {...obj1}
+
+console.log('object 2',obj2)
+console.log('object 3',obj3)
