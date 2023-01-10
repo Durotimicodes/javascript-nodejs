@@ -68,3 +68,9 @@ switch(day) {
 
 ## continue and break
 continue is exit the current iteration of the loop and move to the next, in other words skip while break completely terminates the iteration.
+
+## AS A SOFTWARE ENGINEER
+Avoid side effects and encourage functional purity
+By Avoiding side effects : you do not write a function that reintializes a variable that is globally scoped.
+
+By encouraging functional purity : you make sure you return a value in a function so as to avoid an undefined result. Hence it becomes deterministic

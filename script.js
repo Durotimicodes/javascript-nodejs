@@ -99,3 +99,30 @@ const compose = (f,g) => (a) => f(g(a));
 const sum = (num) => num +1 ;
 
 console.log(compose(sum, sum)(5))
+
+//ForEach 
+const oneArray = [1,2,3,4]
+const newArray = []
+
+const doubleNum = oneArray.forEach((num) => {
+    newArray.push(num * 2);
+})
+
+console.log('forEach iteration', newArray)
+
+//map , filter and reduce 
+//map :does the exact samething as forEach just that its better because map has a restriction you
+//need to return a value
+const myMap = oneArray.map(num =>  num * 3);
+
+console.log('map iteration',myMap)
+
+const filterArray = myMap.filter(num => num > 2)
+console.log(filterArray)
+
+//reduce : you can filter and iterate with reduce
+const reduceArray = myMap.reduce((accumulator, num) => {
+    return accumulator > num
+}, 2)
+
+console.log('The accumulator',reduceArray)
