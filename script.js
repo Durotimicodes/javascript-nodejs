@@ -126,3 +126,42 @@ const reduceArray = myMap.reduce((accumulator, num) => {
 }, 2)
 
 console.log('The accumulator',reduceArray)
+
+//reference type
+const object1 = {prop : 10}
+const object2 = object1
+const object3 = {prop : 10}
+
+object1 == object2 //true
+//context
+
+const object4 = {
+    a : function(){
+        console.log(this)
+    }
+}
+
+//instantiation
+class Player {
+    constructor(name, type) {
+        this.name = name;
+        this.type = type
+    }
+
+    introduce() {
+        console.log(`Hi I am ${this.name}, I am a ${this.type}`)
+    }
+}
+
+class Wizard extends Player {
+    constructor(name, type) {
+        super(name, type)
+        console.log('Wizard', this);
+    }
+    play() {
+        console.log(`Hey i am a ${this.type}`)
+    }
+}
+
+const wizard1 = new Wizard('Edmond', 'Scrum Master');
+const wizard2  = new Wizard('Tara', 'PhD student')
