@@ -169,7 +169,55 @@ const wizard2  = new Wizard('Tara', 'Fire Power')
 //Passed by reference, how to clone an object without passing by reference
 const obj1 = {a : 'a', b: 'b', c: 'c'}
 const obj2 =  Object.assign({d:'d'}, obj1) //Object.assign or use the spread operator
-const obj3 = {...obj1}
+const obj3 = {...obj1}// however this is called shallow cloning 
 
 console.log('object 2',obj2)
 console.log('object 3',obj3)
+
+//deep cloning
+const superaClone = JSON.parse(JSON.stringify(obj1))
+console.log(superaClone)
+
+
+//ES7 
+/*
+methods : .includes() can be used on arrays and strings
+exponential function
+*/
+
+let s = 'Hellooo'
+console.log(s.includes('o'))
+
+let pets = ['Dog', 'Cat', 'Bear']
+console.log(pets.includes('tiger'))
+
+const expo = (x) => x**2 ;
+
+console.log(expo(2))
+
+//ES8 
+/*
+string.padding
+.padStart()
+.padEnd()
+
+object.keys
+object.values
+object.entries
+*/
+
+let testObj = {
+    'username1' : "Pamela",
+    'username2' : 'Tayo',
+    'username3' : 'Raman'
+}
+
+Object.keys(testObj).forEach((key, ind) => {
+    console.log(ind+1, key, testObj[key])
+})
+
+
+Object.values(testObj).forEach(value => console.log(value));
+Object.entries(testObj).forEach(value => console.log(value));
+
+//ES10
