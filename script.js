@@ -221,3 +221,19 @@ Object.values(testObj).forEach(value => console.log(value));
 Object.entries(testObj).forEach(value => console.log(value));
 
 //ES10
+/*
+.flat() :used to flatten nested arrays and remove unwanted trailing commas
+
+.flatMap()
+
+.trimStart()
+.trimEnd()
+
+Object.fromEntries : transforms a arrays of key value pair into an object
+
+try {
+
+} catch {
+    
+}
+*/
