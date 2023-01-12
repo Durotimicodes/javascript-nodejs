@@ -234,6 +234,41 @@ Object.fromEntries : transforms a arrays of key value pair into an object
 try {
 
 } catch {
-    
+
 }
 */
+
+//ES 2020
+/*
+BigInt
+typeof 3n //this is a bigInt
+
+
+
+*/
+
+//Opetional Chaining Operator
+let will_pokemon = {
+    pikachu : {
+        species: 'Mouse Pokemon',
+        height: 0.6,
+        weight: 8
+    }
+}
+
+let andre_pokemon = {
+    raichu : {
+        species: 'Mouse Pokemon',
+        height: 0.8,
+        weight: 30
+    }
+}
+
+//used to check for properties in a object
+let weight3 = andre_pokemon?.raichu?.weight
+
+console.log("Weight",weight3)
+
+//Nullish Coalescing Operator ??
+let weight4 = andre_pokemon?.raichu?.power ?? 'no power'
+console.log(weight4)
