@@ -272,3 +272,30 @@ console.log("Weight",weight3)
 //Nullish Coalescing Operator ??
 let weight4 = andre_pokemon?.raichu?.power ?? 'no power'
 console.log(weight4)
+
+//replaceAll()
+
+//.at() instead of [.length]
+const arrNew = [1, 200, 300, 400]
+lastNum = arrNew.at(-1)
+
+console.log(lastNum)
+
+
+//debugger
+const flattened = [[0,1], [2,3], [4,5]].reduce(
+    (accumulator, arr) => {
+        debugger;
+        return accumulator.concat([], 1)
+    }
+)
+
+const promise = new Promise((resolve, reject) => {
+    if (true) {
+        resolve('Stuf worked');
+    } else {
+        reject('Stuff did not work')
+    }
+})
+
+promise.then(result => console.log(result));

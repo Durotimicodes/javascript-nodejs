@@ -95,3 +95,8 @@ reduce : you can filter and iterate with reduce
  primite types are immutable i.e one can not change them. In other to change them one has to remove the primitive type.
 
  objects are passed by reference, and this is beneficial because we are saving space in memory.
+
+ ## Ways to Deburg code
+ 1. By using console.log
+ 2. By writing the statement "debugger"
+ 
